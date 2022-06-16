@@ -3,8 +3,7 @@ add_executable(
         executable.c
 )
 
-target_include_directories(
+target_link_libraries(
         exe
-        PUBLIC
-        ${PROJECT_SOURCE_DIR}/include
+        stack
 )
