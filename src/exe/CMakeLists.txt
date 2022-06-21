@@ -7,3 +7,14 @@ target_link_libraries(
         exe
         stack
 )
+target_compile_options(
+        exe
+        PUBLIC
+        -Wall
+        -Wextra
+        -Wpedantic
+        -Wformat
+        -Wvla
+        -Wfloat-equal
+        -Werror
+)

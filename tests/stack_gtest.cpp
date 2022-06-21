@@ -80,7 +80,6 @@ TEST(BaseTest, struct_object_push_and_destroy)
 {
     stack_adt_t * stack = stack_init(20, person_free);
     EXPECT_NE(stack, nullptr);
-    char buff[30];
     
     for (int index = 0; index < 15; index++)
     {

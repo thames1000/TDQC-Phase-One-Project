@@ -12,5 +12,15 @@ target_link_libraries(
         gtest
         gtest_main
 )
-
+target_compile_options(
+        stack_gtest
+        PUBLIC
+        -Wall
+        -Wextra
+        -Wpedantic
+        -Wformat
+        -Wvla
+        -Wfloat-equal
+        -Werror
+)
 gtest_discover_tests(stack_gtest)
