@@ -7,13 +7,13 @@ extern "C"
 #endif
 #include <stdint.h>
 
-typedef struct stack_adt_t stack_adt_t;
-stack_adt_t *stack_init(uint32_t stack_size, void (*free_func)(void*));
-void stack_destroy(stack_adt_t *stack);
-void *stack_nth_peek(stack_adt_t *stack, uint32_t index);
-void stack_push(stack_adt_t *stack, void *data);
-void *stack_pop(stack_adt_t *stack);
-void stack_dump(stack_adt_t *stack);
+    typedef struct stack_adt_ stack_adt_t;
+    stack_adt_t * stack_init(uint32_t stack_size, void (*free_func)(void *));
+    void stack_destroy(stack_adt_t * stack);
+    void * stack_nth_peek(stack_adt_t * stack, uint32_t index);
+    void stack_push(stack_adt_t * stack, void * data);
+    void * stack_pop(stack_adt_t * stack);
+    void stack_dump(stack_adt_t * stack);
 
 #ifdef __cplusplus
 }

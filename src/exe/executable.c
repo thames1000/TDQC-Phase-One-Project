@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <stack_adt.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 char * create_payload(const char * payload)
 {
@@ -16,7 +16,7 @@ char * create_payload(const char * payload)
  */
 int main(void)
 {
-    stack_adt_t  * stack = stack_init(20,free);
+    stack_adt_t * stack = stack_init(20, free);
     char buff[30];
 
     // Notice how there is now heap address in your structure. How are  you
